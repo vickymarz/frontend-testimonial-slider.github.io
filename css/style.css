@@ -1,1 +1,263 @@
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(./Inter/static/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(./Inter/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url(./Inter/static/Inter-Light.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  background: url(../images/pattern-curve.svg) bottom left no-repeat;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  margin: 1rem auto;
+}
+.container .testimonial {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container .testimonial .testimonial__img {
+  background: url(../images/pattern-bg.svg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 1rem;
+}
+.container .testimonial .testimonial__img .testimonial__people {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 1rem;
+}
+.container .testimonial .testimonial__img .testimonial__people img {
+  box-shadow: 0 20px 20px #babacf;
+}
+.container .testimonial .testimonial__img .testimonial__btn {
+  max-width: 25%;
+  display: flex;
+  background-color: white;
+  margin: auto;
+  border-radius: 2rem;
+  position: relative;
+  top: -20px;
+  padding: 3px 0px;
+}
+.container .testimonial .testimonial__img .testimonial__btn .testimonial__prev {
+  margin: auto;
+  outline: none;
+  border: none;
+}
+.container .testimonial .testimonial__img .testimonial__btn .testimonial__prev #prev {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: transform 1s;
+}
+.container .testimonial .testimonial__img .testimonial__btn .testimonial__prev #prev:hover {
+  transform: rotate(360deg);
+}
+.container .testimonial .testimonial__img .testimonial__btn .testimonial__next {
+  margin: auto;
+}
+.container .testimonial .testimonial__img .testimonial__btn .testimonial__next #next {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.container .testimonial .testimonial__img .testimonial__btn .testimonial__next #next:hover {
+  transform: rotate(360deg);
+}
+.container .testimonial .testimonial__quote {
+  padding-top: 1.5rem;
+  background: url(../images/pattern-quotes.svg) left no-repeat;
+  background-size: 30%;
+  background-position: top;
+}
+.container .testimonial .testimonial__quote p {
+  font-family: Inter-Medium;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.container .testimonial .testimonial__quote footer {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.container .testimonial .testimonial__quote footer .name {
+  font-family: Inter-Bold;
+  font-weight: 700;
+}
+.container .testimonial .testimonial__quote footer .profession {
+  font-family: Inter-Bold;
+  font-weight: 700;
+  color: #babacf;
+}
+
+.footer {
+  background: url(../images/pattern-curve.svg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 15vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    position: relative;
+    width: 90%;
+    max-width: 1440px;
+    margin: 1rem auto;
+  }
+  .container .testimonial .testimonial__img {
+    background-image: url(../images/pattern-bg.svg) center no-repeat;
+    background-size: initial;
+    height: 100vh;
+    max-width: 60%;
+    float: right;
+    z-index: -1;
+  }
+  .container .testimonial .testimonial__img .testimonial__people {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+  .container .testimonial .testimonial__img .testimonial__btn {
+    max-width: 15%;
+    margin-left: 3rem;
+    display: flex;
+    padding: 3px 0px;
+  }
+  .container .testimonial .testimonial__img .testimonial__btn .testimonial__prev {
+    margin: auto;
+  }
+  .container .testimonial .testimonial__img .testimonial__btn .testimonial__next {
+    margin: auto;
+  }
+  .container .testimonial .testimonial__quote {
+    background-size: 20%;
+    background-position: 3rem top;
+    font-family: Inter-Light;
+    font-weight: 300;
+    float: left;
+    max-width: 50%;
+    position: absolute;
+    left: 1rem;
+    top: 4rem;
+  }
+  .container .testimonial .testimonial__quote p {
+    line-height: 1.2;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+  .container .testimonial .testimonial__quote footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+  }
+  .container .testimonial .testimonial__quote footer .name {
+    padding-right: 5px;
+  }
+
+  .footer {
+    width: 50%;
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .container {
+    position: relative;
+    width: 90%;
+    max-width: 1440px;
+    margin: 1rem auto;
+  }
+  .container .testimonial .testimonial__img {
+    background-image: url(../images/pattern-bg.svg) center no-repeat;
+    background-size: initial;
+    height: 100vh;
+    width: 60%;
+    float: right;
+    z-index: -1;
+  }
+  .container .testimonial .testimonial__img .testimonial__people {
+    max-width: 65%;
+    margin-top: 1rem;
+  }
+  .container .testimonial .testimonial__img .testimonial__btn {
+    max-width: 15%;
+    margin-left: 6rem;
+    display: flex;
+    padding: 3px 0px;
+  }
+  .container .testimonial .testimonial__img .testimonial__btn .testimonial__prev {
+    margin: auto;
+  }
+  .container .testimonial .testimonial__img .testimonial__btn .testimonial__next {
+    margin: auto;
+  }
+  .container .testimonial .testimonial__quote {
+    background-size: 20%;
+    background-position: 3rem top;
+    font-family: Inter-Light;
+    font-weight: 300;
+    float: left;
+    max-width: 50%;
+    position: absolute;
+    left: 3rem;
+    top: 5rem;
+  }
+  .container .testimonial .testimonial__quote p {
+    line-height: 1.2;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .container .testimonial .testimonial__quote footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+  }
+  .container .testimonial .testimonial__quote footer .name {
+    padding-right: 5px;
+  }
+
+  .footer {
+    width: 50%;
+    height: 30vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
