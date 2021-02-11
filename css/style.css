@@ -42,8 +42,8 @@ body {
 .container .testimonial .testimonial__img {
   background: url(../images/pattern-bg.svg) center no-repeat;
   background-size: 100%;
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
   margin-bottom: 1rem;
 }
 .container .testimonial .testimonial__img .testimonial__people {
