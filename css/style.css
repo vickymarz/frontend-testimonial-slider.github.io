@@ -18,7 +18,7 @@ img {
 
 body {
   background: url(../images/pattern-curve.svg) bottom left no-repeat;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   bottom: 0;
 }
