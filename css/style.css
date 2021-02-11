@@ -18,7 +18,7 @@ img {
 
 body {
   background: url(../images/pattern-curve.svg) bottom left no-repeat;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .container {
