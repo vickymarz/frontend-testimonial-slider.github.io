@@ -20,7 +20,6 @@ body {
   background: url(../images/pattern-curve.svg) bottom left no-repeat;
   height: 100%;
   position: absolute;
-  z-index: -101;
   bottom: 0;
 }
 
