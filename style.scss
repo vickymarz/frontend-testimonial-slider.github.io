@@ -1,15 +1,3 @@
-@font-face {
-	font-family: 'Inter-Medium';
-	src: url(./Inter/static/Inter-Medium.ttf);
-}
-@font-face {
-	font-family: 'Inter-Bold';
-	src: url(./Inter/static/Inter-Bold.ttf);
-}
-@font-face {
-	font-family: 'Inter-Light';
-	src: url(./Inter/static/Inter-Light.ttf);
-}
 // Global styling
 // COLORS
 // primary color
@@ -41,7 +29,7 @@ img {
 
 // main content styling
 body {
-	background: url(../images/pattern-curve.svg) bottom left no-repeat;
+	background: url(./images/pattern-curve.svg) bottom left no-repeat;
 	height: 100vh;
 }
 .container {
@@ -60,7 +48,7 @@ body {
 			}
 		}
 		.testimonial__img {
-			background: url(../images/pattern-bg.svg) center no-repeat;
+			background: url(./images/pattern-bg.svg) center no-repeat;
 			background-size: cover;
 			width: 100%;
 			height: 50vh;
@@ -114,11 +102,10 @@ body {
 		}
 		.testimonial__quote {
 			padding-top: 1.5rem;
-			background: url(../images/pattern-quotes.svg) left no-repeat;
+			background: url(./images/pattern-quotes.svg) left no-repeat;
 			background-size: 30%;
 			background-position: top;
 			p {
-				font-family: Inter-Medium;
 				font-weight: $weight-medium;
 				font-size: 0.75rem;
 				text-align: center;
@@ -128,11 +115,9 @@ body {
 				font-size: 0.8rem;
 				text-align: center;
 				.name {
-					font-family: Inter-Bold;
 					font-weight: $weight-bold;
 				}
 				.profession {
-					font-family: Inter-Bold;
 					font-weight: $weight-bold;
 					color: $grayish_blue;
 				}
@@ -141,7 +126,7 @@ body {
 	}
 }
 .footer {
-	background: url(../images/pattern-curve.svg) center no-repeat;
+	background: url(./images/pattern-curve.svg) center no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 15vh;
@@ -159,7 +144,7 @@ body {
 			// justify-content: center;
 			// align-items: center;
 			.testimonial__img {
-				background-image: url(../images/pattern-bg.svg) center no-repeat;
+				background-image: url(./images/pattern-bg.svg) center no-repeat;
 				background-size: initial;
 				height: 100vh;
 				max-width: 60%;
@@ -183,10 +168,9 @@ body {
 				}
 			}
 			.testimonial__quote {
-				// background: url(../images/pattern-quotes.svg) center no-repeat;
+				// background: url(./images/pattern-quotes.svg) center no-repeat;
 				background-size: 20%;
 				background-position: 3rem top;
-				font-family: Inter-Light;
 				font-weight: $weight-light;
 				float: left;
 				max-width: 50%;
@@ -227,7 +211,7 @@ body {
 			// justify-content: center;
 			// align-items: center;
 			.testimonial__img {
-				background-image: url(../images/pattern-bg.svg) center no-repeat;
+				background-image: url(./images/pattern-bg.svg) center no-repeat;
 				background-size: initial;
 				height: 100vh;
 				width: 60%;
@@ -254,7 +238,6 @@ body {
 				// background: url(../images/pattern-quotes.svg) center no-repeat;
 				background-size: 20%;
 				background-position: 3rem top;
-				font-family: Inter-Light;
 				font-weight: $weight-light;
 				float: left;
 				max-width: 50%;
